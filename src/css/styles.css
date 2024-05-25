@@ -84,9 +84,9 @@
 
 /* ------------ GALLERY ------------ */
 
-/**{
+*{
   box-sizing: border-box;
-}*/
+}
 
 .gallery {
   display: flex;
@@ -94,6 +94,8 @@
   justify-content: center;
   gap: 24px;
   background-color: #fefefe;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .gallery-item {
