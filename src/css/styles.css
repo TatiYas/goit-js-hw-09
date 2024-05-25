@@ -38,20 +38,6 @@
   }
 
 
-/*.to-home-link {
-  display: inline-block;
-  border: 2px dotted #fff;
-  padding: 5px;
-  text-shadow: 1px 1px 2px white;
-  transition: transform 0.3s ease;
-}
-
-.to-home-link:hover {
-  transform: scale(1.04);
-  text-shadow: 2px 2px 3px white;
-  transition-duration: 100ms;
-}*/
-
 .list {
   text-align: center;
   line-height: 2;
@@ -60,9 +46,9 @@
 }
 
 .list-link {
-  text-shadow: 2px 2px 4px white;
+  text-shadow: 2px 2px 4px rgb(18, 17, 17);
   text-decoration: underline;
-  text-decoration-color: #fff;
+  text-decoration-color: #cdc9c9;
   text-decoration-thickness: 2px;
 }
 
@@ -102,29 +88,6 @@
 .gallery-item:hover {
   transform: scale(1.01);
 }
-
-/*.sl-wrapper {
-  background-color: rgba(46, 47, 66, 0.8);
-}
-
-.sl-wrapper.simple-lightbox .sl-close {
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.sl-wrapper.simple-lightbox .sl-counter {
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-}
-
-.sl-wrapper.simple-lightbox .sl-navigation button {
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-}*/
 
 /* ------------ FORM ------------ */
 
@@ -199,3 +162,40 @@
 .feedback-form button:hover {
   background-color: #6c8cff;
 }
+
+
+/*.to-home-link {
+  display: inline-block;
+  border: 2px dotted #fff;
+  padding: 5px;
+  text-shadow: 1px 1px 2px white;
+  transition: transform 0.3s ease;
+}
+
+.to-home-link:hover {
+  transform: scale(1.04);
+  text-shadow: 2px 2px 3px white;
+  transition-duration: 100ms;
+}*/
+/*.sl-wrapper {
+  background-color: rgba(46, 47, 66, 0.8);
+}
+
+.sl-wrapper.simple-lightbox .sl-close {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sl-wrapper.simple-lightbox .sl-counter {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.sl-wrapper.simple-lightbox .sl-navigation button {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}*/
