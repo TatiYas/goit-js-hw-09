@@ -38,7 +38,7 @@
   }
 
 
-.to-home-link {
+/*.to-home-link {
   display: inline-block;
   border: 2px dotted #fff;
   padding: 5px;
@@ -50,7 +50,7 @@
   transform: scale(1.04);
   text-shadow: 2px 2px 3px white;
   transition-duration: 100ms;
-}
+}*/
 
 .list {
   text-align: center;
