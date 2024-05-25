@@ -38,7 +38,7 @@
   }
 
 
-/*.to-home-link {
+.to-list-link {
   display: inline-block;
   border: 2px dotted #fff;
   padding: 5px;
@@ -46,13 +46,13 @@
   transition: transform 0.3s ease;
 }
 
-.to-home-link:hover {
+.to-list-link:hover {
   transform: scale(1.04);
   text-shadow: 2px 2px 3px white;
   transition-duration: 100ms;
 }
 
-.section {
+/*.section {
   padding-top: 20px;
   padding-left: 20px;
 }*/
@@ -110,7 +110,7 @@
   transform: scale(1.01);
 }
 
-.sl-wrapper {
+/*.sl-wrapper {
   background-color: rgba(46, 47, 66, 0.8);
 }
 
@@ -131,7 +131,7 @@
 .sl-wrapper.simple-lightbox .sl-navigation button {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
-}
+}*/
 
 /* ------------ FORM ------------ */
 
