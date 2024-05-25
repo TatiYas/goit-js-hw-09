@@ -71,7 +71,7 @@
 }
 
 .list-link:hover {
-  text-shadow: 4px 4px 4px white;
+  text-shadow: 4px 4px 4px rgb(18, 17, 17);
   transition-duration: 100ms;
 }
 
@@ -86,9 +86,9 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
-  background-color: #fefefe;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  background-color: #969393;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .gallery-item {
