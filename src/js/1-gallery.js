@@ -1,3 +1,6 @@
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const images = [
   {
     preview:
@@ -66,46 +69,57 @@ const images = [
 
 /* ----------------------------- */
 
+const head = document.querySelector('h1');
+head.remove();
+
+const section = document.querySelector('section');
+section.classList.add('section');
+const homeLink = document.querySelector('a');
+homeLink.classList.add('to-home-link');
+
 const gallery = document.querySelector('.gallery');
 
-const galleryList = images.map(image => {
-  const { preview, original, description } = image;
+const imgGallery = images
+  .map(
+    image =>
+      `<li class="gallery-item">
+	<a class="gallery-link" href="${image.original}">
+		<img
+			class="gallery-image"
+			src="${image.preview}"
+			alt="${image.description}"
+            width="360px"
+            height="200px"
+			/>
+	</a>
+</li>`
+  )
+  .join('');
 
-  const galleryItem = document.createElement('li');
-  galleryItem.classList.add('gallery-item');
+gallery.insertAdjacentHTML('afterbegin', imgGallery);
 
-  const galleryLink = document.createElement('a');
-  galleryLink.classList.add('gallery-link');
-  galleryLink.setAttribute('href', original);
-  galleryItem.append(galleryLink);
-
-  const imageItem = document.createElement('img');
-  imageItem.classList.add('gallery-image');
-  imageItem.setAttribute('src', preview);
-  imageItem.setAttribute('data-source', original);
-  imageItem.setAttribute('alt', description);
-  galleryLink.append(imageItem);
-  imageItem.setAttribute('width', '360');
-  imageItem.setAttribute('height', '200');
-  return galleryItem;
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionDelay: '250ms',
+  captionsData: 'alt',
 });
 
-gallery.append(...galleryList);
+function loadGoogleFonts() {
+  const linkGoogle = document.createElement('link');
+  linkGoogle.rel = 'preconnect';
+  linkGoogle.href = 'https://fonts.googleapis.com';
+  document.head.appendChild(linkGoogle);
 
-gallery.addEventListener('click', bigImage);
+  const linkGstatic = document.createElement('link');
+  linkGstatic.rel = 'preconnect';
+  linkGstatic.href = 'https://fonts.gstatic.com';
+  linkGstatic.crossOrigin = 'anonymous';
+  document.head.appendChild(linkGstatic);
 
-function bigImage(event) {
-  event.preventDefault();
-  if (event.target.nodeName !== 'IMG') {
-    return;
-  }
-
-  const bigImage = event.target.dataset.source;
-
-  const instance = basicLightbox.create(`
-
-  <img src="${bigImage}" width="1112" height="640">
-
-`);
-  instance.show();
+  const linkFont = document.createElement('link');
+  linkFont.rel = 'stylesheet';
+  linkFont.href =
+    'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap';
+  document.head.appendChild(linkFont);
 }
+
+document.addEventListener('DOMContentLoaded', loadGoogleFonts);
