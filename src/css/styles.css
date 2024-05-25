@@ -24,20 +24,21 @@
   -webkit-text-size-adjust: 100%;
 }
 
-* {
+/* {
   box-sizing: border-box;
-}
+}*/
 
-body {
+
   body {
     max-width: 1440px;
     margin: 0 auto;
     padding: 24px;
+    background-color: #808080;
 
   }
-}
 
-.to-home-link {
+
+/*.to-home-link {
   display: inline-block;
   border: 2px dotted #fff;
   padding: 5px;
@@ -54,38 +55,38 @@ body {
 .section {
   padding-top: 20px;
   padding-left: 20px;
-}
+}*/
 
-/* ------------ HOME PAGE ------------ */
 
-.home-list {
+
+.list {
   text-align: center;
   line-height: 2;
   padding-top: 50px;
   font-size: 50px;
 }
 
-.home-list-link {
+.list-link {
   text-shadow: 2px 2px 4px white;
   text-decoration: underline;
   text-decoration-color: #fff;
   text-decoration-thickness: 2px;
 }
 
-.home-list-item:hover {
+.list-item:hover {
   transform: scale(1.04);
 }
 
-.home-list-link:hover {
+.list-link:hover {
   text-shadow: 4px 4px 4px white;
   transition-duration: 100ms;
 }
 
 /* ------------ GALLERY ------------ */
 
-* {
+/**{
   box-sizing: border-box;
-}
+}*/
 
 .gallery {
   display: flex;
